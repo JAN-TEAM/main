@@ -27,8 +27,8 @@ require 'database.php';
 					<span>".$result->name."</span>
 					<span>".$result->date_start."</span>
 					<span>".$result->date_end."</span>
-					<span><a href=\"modcourse.php?id".$result->id_course."\">Modificar</a></span>
-					<span><a href=\"delcourse.php?id".$result->id_course."\">Borrar</a></span>
+					<span><a href=\"inserts/modcourse.php?id=".$result->id_course."\">Modificar</a></span>
+					<span><a href=\"inserts/delcourse.php?id=".$result->id_course."\">Borrar</a></span>
 				</div>";
 			}
 		} else {echo "<p>No hay resultados</p>";}
@@ -53,8 +53,8 @@ require 'database.php';
 					<span>".$result2->id_schedule."</span>
 					<span>".$result2->name."</span>
 					<span>".$result2->color."</span>
-					<span><a href=\"modteacher.php?id".$result2->id_class."\">Modificar</a></span>
-					<span><a href=\"delteahcer.php?id".$result2->id_class."\">Borrar</a></span>
+					<span><a href=\"inserts/modclass.php?id".$result2->id_class."\">Modificar</a></span>
+					<span><a href=\"inserts/delclass.php?id".$result2->id_class."\">Borrar</a></span>
 				</div>";
 			}
 		} else {echo "<p>No hay resultados</p>";}
@@ -77,13 +77,13 @@ require 'database.php';
 					<span>".$result1->telephone."</span>
 					<span>".$result1->nif."</span>
 					<span>".$result1->email."</span>
-					<span><a href=\"modteacher.php?id".$result1->id_teacher."\">Modificar</a></span>
-					<span><a href=\"delteahcer.php?id".$result1->id_teacher."\">Borrar</a></span>
+					<span><a href=\"inserts/modteacher.php?id".$result1->id_teacher."\">Modificar</a></span>
+					<span><a href=\"inserts/delteahcer.php?id".$result1->id_teacher."\">Borrar</a></span>
 				</div>";
 			}
 		} else {echo "<p>No hay resultados</p>";}
 		?>
-		<p><a href="inserts/insertcourse.php">Añadir un nuevo profesor</a></p>
+		<p><a href="inserts/insertteacher.php">Añadir un nuevo profesor</a></p>
 	</body>
 	
 

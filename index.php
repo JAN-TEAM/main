@@ -5,9 +5,9 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
-		<h1>PLEASE LOGIN OR SINGUP</h1>
-		<a href="select/selectlogin.php">Login</a>
-		<a href="select/selectsignup.php">SignUp</a>
+		<h1>SELECCIONA:</h1>
+		<a href="select/selectlogin.php">Inicio de sesion</a><br><br>
+		<a href="select/selectsignup.php">Registro en la aplicacion</a>
 	</body>
 
 </html>
