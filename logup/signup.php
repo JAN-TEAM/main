@@ -39,8 +39,8 @@ if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['name'
 			<p><?= $message ?></p>
 		<?php endif; ?>
 
-		<h1>SIGNUP</h1>
-		<span>o <a href="login.php">Login</a>	</span>
+		<h1>REGISTRO DE ADMINISTRADOR</h1>
+		<span>o <a href="login.php">Inicio de sesion</a>	</span>
 
 		<form action="signup.php" method="post">
 			<input type="text" name="username" placeholder="Introduce tu nombre de usuario">

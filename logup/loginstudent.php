@@ -11,8 +11,8 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 	$message='';
 
 	if(count($results) > 0 && password_verify($_POST['pass'], $results['pass'])){
-		//$_SESSION['id'] = $results['id'];
-		//header('Location: /p6');
+		$_SESSION['id'] = $results['id'];
+		header('Location: ../indexadmin.php');
 		$message = 'Login bien';
 	} else {
 		$message = 'Las credenciales no coinciden';
@@ -40,8 +40,8 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 			<p><?= $message ?></p>
 		<?php endif; ?>
 
-		<h1>LOGIN</h1>
-		<span>o <a href="signupstudent.php">SignUp</a>	</span>
+		<h1>INICIO DE SESION DE ESTUDIANTE</h1>
+		<span>o <a href="signupstudent.php">Registro</a>	</span>
 
 		<form action="loginstudent.php" method="post">
 			<input type="text" name="id" placeholder="Introduce tu nombre de usuario">

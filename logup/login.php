@@ -12,7 +12,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 
 	if(count($results) > 0 && password_verify($_POST['password'], $results['password'])){
 		$_SESSION['id_user_admin'] = $results['id'];
-		header('Location: /p6');
+		header('../indexadmin.php');
 	} else {
 		$message = 'Las credenciales no coinciden';
 	}
@@ -38,8 +38,8 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 			<p><?= $message ?></p>
 		<?php endif; ?>
 
-		<h1>LOGIN</h1>
-		<span>o <a href="signup.php">SignUp</a>	</span>
+		<h1>INICIO DE SESION DE ADMISTRADOR</h1>
+		<span>o <a href="signup.php">Registro</a>	</span>
 
 		<form action="login.php" method="post">
 			<input type="text" name="email" placeholder="Introduce tu Email">
